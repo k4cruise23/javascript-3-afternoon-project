@@ -40,7 +40,10 @@
 */
 
 function showValues( obj ) {
-  //Code Here
+  let str = []
+  for(let key in obj){
+    str.push()
+  }
 }
 
 
