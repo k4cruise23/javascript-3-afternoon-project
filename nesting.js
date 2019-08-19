@@ -140,7 +140,15 @@ var myCar = {
 
 //Code Here
 
+function recordCleaner(){
+  for( let i = 0; i < myCar.accidents.length; i++) {
+    if(myCar.accidents[1].atFaultForAccident){
+      myCar.accidents[i].atFaultForAccident = false
+    }
+  }
+}
 
+recordCleaner()
 
 ////////// PROBLEM 5 //////////
 
