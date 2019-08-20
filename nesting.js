@@ -52,7 +52,20 @@ var employees = [
 
 //Code Here
 
-
+function employeeUpdater() {
+  for (var i = 0; i < employees.length; i++) {
+    var obj = employees[i];
+    for (var prop in obj) {
+      if(obj[prop] === "Theo") {
+        employees.splice(i,1)
+      }
+      if(obj[prop] === "Lorie") {
+        obj['department'] = 'HR'
+      }
+    }
+  }
+  return employees
+}
 
 ////////// PROBLEM 2 //////////
 
@@ -70,7 +83,14 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 
 //Code Here
 
-
+function removeDuplicates(){
+  for(let i = 0; i >= workplaceAccidents; i++){
+    for(let j = 0; j >= workplaceAccidents; j++){
+      if(workplaceAccidents[i] === workplaceAccidents[j] && i !== j)
+      workplaceAccidents.splice(i, 1)
+    }
+  }
+} 
 
 ////////// PROBLEM 3 //////////
 
